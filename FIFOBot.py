@@ -31,7 +31,6 @@ async def on_message(message) :
   #Join
   if message.content.startswith('!join'):
     name=message.author.mention
-    #db[""] = name
     if(name in queue):
       await message.channel.send(message.author.mention+" already in queue")
     else:
